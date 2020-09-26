@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.vue', '.ts', '.js'],
   },
   module: {
     rules: [
@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.scss$/,
