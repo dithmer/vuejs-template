@@ -14,12 +14,13 @@ div(class="h-full flex justify-center items-center ")
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
+
 const App = defineComponent({
   name: 'App',
-})
+});
 
-export default App
+export default App;
 </script>
 
 <style lang="scss"></style>
