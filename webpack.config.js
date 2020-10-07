@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.vue', '.ts', '.js'],
+    extensions: ['.vue', '.ts', '.tsx', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -23,7 +23,7 @@ module.exports = {
         loader: 'pug-plain-loader',
       },
       {
-        test: /\.ts$/,
+        test: /\.ts(x)?$/,
         use: [
           {
             loader: 'babel-loader',
